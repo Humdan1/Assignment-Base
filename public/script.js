@@ -1,10 +1,6 @@
 async function windowActions() {
 
-const endpoint =
-  "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
-
-
-const request = await fetch(endpoint)
+const request = await fetch('/api')
   .then(blob => blob.json())
   .then(data => rtype.push(...data));
 const rtype = await request.json();
